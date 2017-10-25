@@ -1,14 +1,20 @@
 module ClassnamesHelper
   def classnames(*args)
-    args.map do |arg|
+    classes = []
+
+    args.each do |arg|
       case arg
       when String
-        arg
+        classes.push(arg) if arg.size > 0
       when Hash
-        arg.map do |k, v|
-          k.to_s if v
+        arg.each do |k, v|
+          classes.push(k.to_s) if v == true
         end
+      when Array
+        classes.push(classnames(*arg))
       end
-    end.flatten.compact.join(" ")
+    end
+    
+    classes.flatten.compact.join(" ")
   end
 end

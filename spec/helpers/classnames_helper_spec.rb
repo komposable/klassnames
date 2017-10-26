@@ -4,6 +4,11 @@ RSpec.describe ClassnamesHelper, type: :helper do
     it { should eq("") }
   end
 
+  describe "#classnames with one blank string given" do
+    subject { helper.classnames(" ") }
+    it { should eq("") }
+  end
+
   describe "#classnames with one string given" do
     subject { helper.classnames("one") }
     it { should eq("one") }

@@ -5,7 +5,7 @@ module ClassnamesHelper
     args.each do |arg|
       case arg
       when String
-        classes.push(arg) if arg.size > 0
+        classes.push(arg) if arg.strip.size > 0
       when Hash
         arg.each do |k, v|
           classes.push(k.to_s) if v == true

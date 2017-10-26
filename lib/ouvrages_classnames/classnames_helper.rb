@@ -15,6 +15,6 @@ module ClassnamesHelper
       end
     end
     
-    classes.flatten.compact.join(" ")
+    classes.join(" ")
   end
 end

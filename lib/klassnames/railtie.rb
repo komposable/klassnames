@@ -1,6 +1,6 @@
-require 'ouvrages_classnames/classnames_helper'
+require 'klassnames/classnames_helper'
 
-module OuvragesClassnames
+module Klassnames
   class Railtie < Rails::Railtie
     initializer "classnames.helper" do |app|
       ActionView::Base.send :include, ClassnamesHelper

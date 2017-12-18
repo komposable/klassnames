@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "ouvrages_classnames/version"
+require "klassnames/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "ouvrages_classnames"
-  spec.version       = OuvragesClassnames::VERSION
-  spec.authors       = ["Florent Ferry"]
-  spec.email         = ["florent@ouvrages-web.fr"]
+  spec.name          = "klassnames"
+  spec.version       = Klassnames::VERSION
+  spec.authors       = ["Komposable"]
+  spec.email         = ["contact@komposable.io"]
 
   spec.summary       = "View helper to simplify conditional class in view"
   spec.description   = "View helper to simplify conditional class in view"
-  spec.homepage      = "https://github.com/ouvrages/ouvrages_classnames"
+  spec.homepage      = "https://github.com/komposable/klassnames"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})

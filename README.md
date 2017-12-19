@@ -1,5 +1,7 @@
 # Klassnames
 
+[![Build Status](https://travis-ci.org/komposable/klassnames.svg?branch=master)](https://travis-ci.org/komposable/klassnames)
+
 View helper to simplify conditional class in view.
 
 ## Installation
